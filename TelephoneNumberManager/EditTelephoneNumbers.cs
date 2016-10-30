@@ -10,21 +10,26 @@ using System.Windows.Forms;
 
 namespace TelephoneNumberManager
 {
-    public partial class AddUser : Form
+    public partial class EditTelephoneNumbers : Form
     {
-        public AddUser()
+        public EditTelephoneNumbers()
         {
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

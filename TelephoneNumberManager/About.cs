@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace TelephoneNumberManager
 {
-    public partial class AddUser : Form
+    public partial class About : Form
     {
-        public AddUser()
+        public About()
         {
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void About_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
