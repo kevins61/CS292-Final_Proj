@@ -19,7 +19,9 @@ namespace TelephoneNumberManager
 
         private void Sites_Load(object sender, EventArgs e)
         {
-            
+            // TODO: This line of code loads data into the 'telephoneNumbersDataSet.Sites' table. You can move, or remove it, as needed.
+            this.sitesTableAdapter.Fill(this.telephoneNumbersDataSet.Sites);
+
         }
     }
 }

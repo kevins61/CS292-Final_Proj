@@ -35,40 +35,47 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.lstTelephoneNumbers = new System.Windows.Forms.ListBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cboSite
             // 
             this.cboSite.FormattingEnabled = true;
-            this.cboSite.Location = new System.Drawing.Point(54, 18);
+            this.cboSite.Location = new System.Drawing.Point(40, 15);
+            this.cboSite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboSite.Name = "cboSite";
-            this.cboSite.Size = new System.Drawing.Size(121, 24);
+            this.cboSite.Size = new System.Drawing.Size(92, 21);
             this.cboSite.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 21);
+            this.label1.Location = new System.Drawing.Point(9, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 17);
+            this.label1.Size = new System.Drawing.Size(28, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Site:";
             // 
             // chkSetAsFax
             // 
             this.chkSetAsFax.AutoSize = true;
-            this.chkSetAsFax.Location = new System.Drawing.Point(15, 408);
+            this.chkSetAsFax.Location = new System.Drawing.Point(11, 332);
+            this.chkSetAsFax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkSetAsFax.Name = "chkSetAsFax";
-            this.chkSetAsFax.Size = new System.Drawing.Size(226, 21);
+            this.chkSetAsFax.Size = new System.Drawing.Size(172, 17);
             this.chkSetAsFax.TabIndex = 3;
             this.chkSetAsFax.Text = "Set Selected Number(s) as Fax";
             this.chkSetAsFax.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(54, 471);
+            this.button1.Location = new System.Drawing.Point(40, 383);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 25);
+            this.button1.Size = new System.Drawing.Size(56, 20);
             this.button1.TabIndex = 4;
             this.button1.Text = "UPDATE";
             this.button1.UseVisualStyleBackColor = true;
@@ -76,9 +83,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(177, 472);
+            this.button2.Location = new System.Drawing.Point(133, 384);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 25);
+            this.button2.Size = new System.Drawing.Size(56, 20);
             this.button2.TabIndex = 5;
             this.button2.Text = "CANCEL";
             this.button2.UseVisualStyleBackColor = true;
@@ -86,9 +94,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(302, 473);
+            this.button3.Location = new System.Drawing.Point(226, 384);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 25);
+            this.button3.Size = new System.Drawing.Size(56, 20);
             this.button3.TabIndex = 6;
             this.button3.Text = "EXIT";
             this.button3.UseVisualStyleBackColor = true;
@@ -97,25 +106,62 @@
             // lstTelephoneNumbers
             // 
             this.lstTelephoneNumbers.FormattingEnabled = true;
-            this.lstTelephoneNumbers.ItemHeight = 16;
-            this.lstTelephoneNumbers.Location = new System.Drawing.Point(15, 58);
+            this.lstTelephoneNumbers.Location = new System.Drawing.Point(11, 47);
+            this.lstTelephoneNumbers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstTelephoneNumbers.Name = "lstTelephoneNumbers";
             this.lstTelephoneNumbers.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lstTelephoneNumbers.Size = new System.Drawing.Size(375, 340);
+            this.lstTelephoneNumbers.Size = new System.Drawing.Size(282, 277);
             this.lstTelephoneNumbers.TabIndex = 7;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(40, 383);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(60, 25);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "UPDATE";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(133, 384);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(60, 25);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "CANCEL";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(226, 384);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(60, 25);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "EXIT";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button3_Click);
             // 
             // EditTelephoneNumbers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 530);
+            this.ClientSize = new System.Drawing.Size(310, 431);
             this.Controls.Add(this.lstTelephoneNumbers);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button3);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.chkSetAsFax);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboSite);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EditTelephoneNumbers";
             this.Text = "Edit Telephone Numbers";
             this.ResumeLayout(false);
@@ -132,5 +178,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ListBox lstTelephoneNumbers;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }

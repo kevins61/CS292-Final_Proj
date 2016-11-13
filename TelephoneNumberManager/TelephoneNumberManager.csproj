@@ -99,6 +99,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelephoneNumbersDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TelephoneNumbersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TelephoneNumbersDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TelephoneNumbersDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TelephoneProvider.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +154,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TelephoneNumbersDataSet.xsc">
+      <DependentUpon>TelephoneNumbersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TelephoneNumbersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TelephoneNumbersDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TelephoneNumbersDataSet.xss">
+      <DependentUpon>TelephoneNumbersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TelephoneNumbersDataSet1.xsc">
+      <DependentUpon>TelephoneNumbersDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TelephoneNumbersDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TelephoneNumbersDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TelephoneNumbersDataSet1.xss">
+      <DependentUpon>TelephoneNumbersDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -19,6 +19,10 @@ namespace TelephoneNumberManager
 
         private void TelephoneProvider_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'telephoneNumbersDataSet1.Telco' table. You can move, or remove it, as needed.
+            this.telcoTableAdapter.Fill(this.telephoneNumbersDataSet1.Telco);
+            // TODO: This line of code loads data into the 'telephoneNumbersDataSet.Sites' table. You can move, or remove it, as needed.
+            this.sitesTableAdapter.Fill(this.telephoneNumbersDataSet.Sites);
 
         }
 
@@ -57,6 +61,14 @@ namespace TelephoneNumberManager
             {
 
             }
+        }
+
+        private void sitesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.sitesBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.telephoneNumbersDataSet);
+
         }
     }
 }
